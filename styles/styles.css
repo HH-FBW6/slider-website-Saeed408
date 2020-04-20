@@ -1,2 +1,87 @@
 body {
   margin: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  overflow: hidden; }
+
+#slider-1, #slider-2, #slider-3, #slider-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation-name: truck-yello;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite; }
+
+@keyframes truck-yello {
+  from {
+    transform: translateY(0px, 0px); }
+  to {
+    transform: translateY(200px, 100px); } }
+
+#slider-1 {
+  background-color: rgba(73, 149, 73, 0.637);
+  height: 1220px; }
+
+#slider-2 {
+  background-color: rgba(56, 18, 100, 0.637);
+  height: 1220px; }
+
+#slider-3 {
+  background-color: rgba(18, 37, 121, 0.637);
+  height: 1220px; }
+
+#slider-4 {
+  background-color: rgba(158, 157, 158, 0.719);
+  height: 1220px; }
+
+#slider-1 > h1 {
+  animation-name: animation-h1;
+  transform: translateY(-1000px);
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes animation-h1 {
+  to {
+    transform: translateY(0px); } }
+
+#slider-1 > p {
+  animation-name: animation-p;
+  transform: translateX(-1400px);
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; }
+
+@keyframes animation-p {
+  to {
+    transform: translateX(0px); } }
+
+h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 600; }
+
+p {
+  color: white;
+  font-size: 30px;
+  text-align: center; }
+
+.btn {
+  border: 1px solid rgba(82, 77, 77, 0.315);
+  background-color: snow;
+  padding: 20px;
+  line-height: 3;
+  margin-left: 10px;
+  color: #333;
+  text-decoration: none; }
+
+.btn:hover {
+  background-color: #333;
+  color: snow; }
